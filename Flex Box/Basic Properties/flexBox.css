@@ -1,0 +1,149 @@
+
+body {
+	font-family: Arial;
+	padding: 0px 150px;
+}
+
+h3 {
+	background-color: #f0f0f0;
+	padding: 5px;
+	margin: 50px 0px 5px;
+	color: #666;
+}
+.flexParent {
+	border: 2px solid #312AAA;
+	padding: 10px;
+    display: flex;
+}
+
+.flexChild {
+	border: 2px solid #ddd;
+	margin: 10px;
+	background-color: #f0f0f0;
+	padding: 20px;
+}
+
+
+.flexParent.direction {
+	flex-direction: row-reverse;
+}
+
+.flexParent.wrap {
+	flex-wrap: wrap;
+}
+.flexParent.wrap .flexChild {
+	width: 20%;
+}
+
+.flexParent.justify-end {
+	justify-content: flex-end;
+} 
+.flexParent.justify-center {
+	justify-content: center;
+}
+.flexParent.justify-space-between {
+	justify-content: space-between;
+}
+.flexParent.justify-space-around  {
+	justify-content: space-around;
+}
+
+.flexParent.align-items-end {
+	height: 150px;
+	align-items: flex-end;
+}
+
+.flexParent.align-items-center {
+	height: 150px;
+	align-items: center;
+}
+
+.flexParent.align-items-stretch {
+	height: 150px;
+	align-items: stretch;
+}
+
+.flexParent.align-content-center-wrap {
+	height: 200px;
+	flex-wrap: wrap;
+	align-content: center;
+}
+.flexParent.align-content-center-wrap .flexChild {
+	width: 20%;
+}
+
+.flexParent.align-content-space-around-wrap {
+	height: 200px;
+	flex-wrap: wrap;
+	align-content: space-around;
+}
+.flexParent.align-content-space-around-wrap .flexChild {
+	width: 20%;
+}
+
+.flexParent.flex-direction-column {
+	height: 200px;
+	flex-wrap: wrap;
+	align-content: space-around;
+	flex-direction: column;
+}
+
+.flexParent.flex-order-positive .flexChild:nth-child(2) {
+	order: 1;
+}
+
+.flexParent.flex-order-negative .flexChild:nth-child(2) {
+	order: -1;
+}
+
+.flexParent.flex-grow .flexChild {
+	flex-grow: 1;
+}
+.flexParent.flex-grow .flexChild:nth-child(2) {
+	flex-grow: 4;
+}
+
+.flexParent.flex-shrink .flexChild {
+	width: 20%;
+}
+.flexParent.flex-shrink .flexChild:nth-child(2) {
+	flex-shrink: 4;
+}
+
+.flexParent.flex-basis .flexChild {
+	width: 20%;
+}
+.flexParent.flex-basis .flexChild:nth-child(2) {
+	flex-basis: 10px;
+}
+
+.flexParent.flex-align-self {
+	height: 150px;
+}
+.flexParent.flex-align-self .flexChild {
+	height: 20px;
+}
+.flexParent.flex-align-self .flexChild:nth-child(2) {
+	align-self: flex-end;
+}
+
+.flexParent.flex-align-center {
+	height: 250px;
+}
+.flexParent.flex-align-center .flexChild {
+	height: 20px;
+}
+.flexParent.flex-align-center .flexChild:nth-child(2) {
+	align-self: center;
+}
+
+.flexParent.flex-align-stretch {
+	height: 250px;
+}
+.flexParent.flex-align-stretch .flexChild {
+	height: 20px;
+}
+.flexParent.flex-align-stretch .flexChild:nth-child(2) {
+	align-self: stretch;
+	height: auto;
+}
